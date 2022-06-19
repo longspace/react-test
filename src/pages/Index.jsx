@@ -1,13 +1,12 @@
 import React from 'react'
+import { nanoid } from 'nanoid'
 
-import { Button } from 'antd';
 function Index() {
   return (
     <div>Index
-        
-      APP Setup
+
+      APP Setup {nanoid()}
       <br />
-      <Button type="primary">Primary Button</Button>
     </div>
   )
 }
