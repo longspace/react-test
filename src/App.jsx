@@ -13,6 +13,7 @@ function App() {
             return <Route path={item.path} element={<item.element />} key={item.path}></Route>
           })
         }
+        <Route path="*" element={<h1>404 page not found</h1>} ></Route>
       </Routes>
     </div>
   );
