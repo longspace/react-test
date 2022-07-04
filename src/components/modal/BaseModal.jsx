@@ -13,7 +13,7 @@ function BaseModal(props) {
   };
 
   return (
-    <Modal title={config.title} visible={config.visible} width={config.width} onOk={handleOk} onCancel={handleCancel} okText="确定" cancelText="取消">
+    <Modal title={config.title} visible={config.visible} width={config.width} onOk={handleOk} onCancel={handleCancel} okText="确定" cancelText="取消" footer={config.footer || null} maskClosable={false}>
       <div>{children}</div>
     </Modal>
   )
