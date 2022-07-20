@@ -9,7 +9,7 @@ export const getLastMonthStartEnd = () => {
     var day = date.getDate();  //getDate() 方法可返回月份的某一天。也就是当前date的当前天数
     day = day > 9 ? day : '0' + day;
     // console.log("year:" + year + "month:" + month + "day:" + day)
-    return [`${year}-${month}-01`,`${year}-${month}-${day}`]
+    return [`${year}-${month}-01`, `${year}-${month}-${day}`]
 }
 
 // 返回从当天开始计算到指定天数的日期

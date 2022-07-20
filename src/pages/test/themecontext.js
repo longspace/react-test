@@ -1,12 +1,3 @@
-import React, { useState } from "react";
+import React from "react";
 
-export const theme = {
-    backgroundColor: "green"
-};
-export const setTheme = (val) => {
-    theme.backgroundColor = val
-    console.log(111, val);
-}
-// const [theme,setTheme] = useState({backgroundColor: "green"})
-
-export const ThemeContext = React.createContext(theme);
+export const ThemeContext = React.createContext(null);

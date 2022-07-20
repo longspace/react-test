@@ -29,8 +29,8 @@ http.interceptors.request.use(config => {
 
 // 添加响应拦截器
 http.interceptors.response.use(response => {
-    if(response.headers && response.headers['admin-token']){
-        
+    if (response.headers && response.headers['admin-token']) {
+
     }
 
     if (response.status === 200) { // http status
@@ -45,7 +45,7 @@ http.interceptors.response.use(response => {
             return Promise.reject(msg);
         } else if (![200, 201, 204].includes(code)) {  // 后台自定义 status
             return data;
-        }else{
+        } else {
             message.error(msg);
             return Promise.reject(msg);
         }

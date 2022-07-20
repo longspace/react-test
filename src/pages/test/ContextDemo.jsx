@@ -10,10 +10,9 @@ const Child = () => {
 
 function ContextDemo() {
     const {setTheme}= useContext(ThemeContext)
-    // console.log("bgColor",bgColor)
     return (
         <div>
-            <button onClick={() => setTheme("pink")}>非顶层组件改变颜色</button>
+            <button onClick={() => setTheme({backgroundColor: "pink"})}>非顶层组件改变颜色</button>
             <Child />
         </div>
     )
